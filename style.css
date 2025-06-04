@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "SemiJunteientado";
+    src: url(font/Playwrite_GB_S/PlaywriteGBS-Italic-VariableFont_wght.ttf);
+    font-weight: normal;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Roboto:wdth,wght@75..100,381&display=swap");
+
+
+:root {
+    --font-fam1: "SemiJunteientado", sans-serif;
+    --font-fam2: "Bebas Neue", sans-serif;
+
+    --color1:rgb(207, 4, 4);
+    --color2:rgb(255, 89, 18);
+}
+
+
+body {
+    margin: 0% 0%;
+}
+
+header {
+    margin: 0% 0%;
+    padding: 8px;
+    background-color: black;
+    max-width: 100%;
+    height: 200px;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--font-fam1);
+    font-size: 270%;
+    margin: 0%;
+    margin-top: 20px;
+    font-weight: 800;
+}
+
+header > p {
+    font-family: var(--font-fam2);
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+header p#milton {
+    font-family: var(--font-fam1);
+    font-size: 150%;
+    margin: 0%;
+    transition: 1.2s;
+    
+}
+
+header p#milton:hover {
+    transform: scale(140%);
+    
+    transition: 1.2s;
+}
+
+header p#milton a {
+    text-decoration: none;
+    color: var(--color1)
+    
+}
+
+header p#milton a:hover {
+    color: var(--color2);
+    transition: 1.2s;
+    
+}
+
+
+main {
+    max-width: 100%;
+    position: relative;
+}
+
+main pre{
+    font-family: var(--font-fam1);
+    font-size: 130%;
+    font-weight: 100;
+    line-height: 200%;
+}
+
+main > pre.p1 {
+    padding-top: 40px;
+    margin-left: 15%;
+}
+
+main div.c1 {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    height: 450px;
+    background-image: url(img/papel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-right: 40px;
+    
+}
+
+main div.c2 {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    height: 450px;
+    background-image: url(img/janela.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-right: 40px;
+    display: block;
+}
+
+main div pre.p2 {
+    padding-top: 30px;
+    width: 430px;
+    margin-left: 60%;
+    background-color: rgba(0, 0, 0, 0.576);
+    border: 1px solid rgba(0, 0, 0, 0.591);
+    border-radius: 10px;
+    transition: 1.2s;
+}
+
+main div pre.p2:hover {
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 1.2s;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+    padding: 5px;
+    font-family: var(--font-fam2);
+    font-size: 120%;
+    text-align: center;
+
+
+}
+
+footer a {
+    font-family: var(--font-fam1);
+    color: var(--color1);
+    text-decoration: none;
+    transition: 1.2s;
+}
+
+footer a:hover {
+    color: var(--color2);
+    font-size: 110%;
+    transition: 1.2s;
+}
+
